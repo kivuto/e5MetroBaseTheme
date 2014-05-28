@@ -44,8 +44,8 @@ X. SASS ELEMENTS (HIDDEN IN CSS)
 //Use these to edit the theme.
 
 //Main Background and Block Backgrounds
-$background: #ffffff;
-$contentBackground: #ffffff;
+$background: #777777;
+$contentBackground: #fff;
 $widgetBackground: #ffffff;
 
 //Header and Emphasis Colours
@@ -119,10 +119,11 @@ body{
 }
 
 html body #main{
-	padding:			5px 25px 20px 25px;
+	padding:			5px 25px 30px 25px;
 	position:			relative;
-	width:				890px;
+	width:				760px;
 	margin:				0px;
+	background:			$contentBackground;
 }
 
 #header{

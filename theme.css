@@ -4268,10 +4268,11 @@ a, a:visited, a:link {
 	2. LAYOUT
 ------------------------------*/
 html body #main {
-  padding: 5px 25px 20px 25px;
+  padding: 5px 25px 30px 25px;
   position: relative;
-  width: 890px;
-  margin: 0px; }
+  width: 760px;
+  margin: 0px;
+  background: white; }
 
 #header {
   position: relative; }
@@ -4615,10 +4616,10 @@ html body .ContentSectionBody {
   OLD OTH STYLES
 -----------------------------*/
 #wrapper {
-  background: white; }
+  background: #777777; }
 
 #mainSpacer {
-  background: white !important;
+  background: #777777 !important;
   position: relative;
   padding-right: 15px; }
 
