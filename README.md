@@ -29,7 +29,39 @@ Editing the theme is very simple when using SASS!
 	*	You can change the overall font here as well.
 1. Simply change the colour code (ie. #ffffff) to the desired colour for each set of elements.
 
-Koala
+The following outlines what variable effects what
+
+- **$background**
+	- sites main background colour.
+- **$widgetBackground**
+	- background colour of content boxes.
+- **$mainColour**
+	- navigation header colour.
+	- Imageless header font.
+- **$secondColour**
+	- navigation header inactive tab colour 
+	- content box headers.
+	- content box borders 
+- **$fontColour**
+	- Standard font colour
+- **$subFontColour**
+	- Site version number in footer
+	- Small info text under products
+- **$linkColour**
+	- Standard link colours
+- **$productLinkColour**
+	- Colour of links in content boxes
+- **$navLinkActive**
+	- Navigation Active tab font colour.
+- **$navLinkInactive**
+	- Navigation Inactive tab font colour.
+- **$headerTextColour**
+	- Large text headers in content boxes
+- **$mainFont**
+	- Font family for the entire page.
+
+.........................
+### Koala ###
 
 1. Once changes have been made, save the file and open Koala.
 3. Add a folder and navigate to the SCSS file.
