@@ -45,7 +45,7 @@ X. SASS ELEMENTS (HIDDEN IN CSS)
 
 //Main Background and Block Backgrounds
 $background: #ffffff;
-$widgetBackground: #efefef;
+$widgetBackground: #ffffff;
 
 //Header and Emphasis Colours
 $mainColour: #444444;
@@ -171,15 +171,6 @@ html body .ContentSectionHeader{
 	3. MODULES
 ------------------------------*/
 
-/* E5s LITTLE SECRET */
-/*html body .PrimaryColor{
-	background:		transparent;
-}
-
-html body .SecondaryColor{
-	background:		transparent;
-}*/
-
 .ui-state-highlight{
 	border: none !important;
 	background: none;
@@ -213,19 +204,6 @@ ul.HeaderText li{
 	position:	relative;
 }
 
-
-/*
-	HOME BANNER
-------------------------------*/
-a#ctl00_hlHome{
-	display:	inline-block;
-	position:	relative;
-	overflow:	hidden;
-}
-
-a#ctl00_hlHome img{
-	display:	none !important;
-}
 
 /*
 	PRODUCT SEARCH
@@ -941,10 +919,10 @@ html body #mainSpacer{
 	color: $headerTextColour;
 }
 
-#ctl00_rightContent .ad-body a{
-	color: $linkColour !important;
-}
-
 .ui-widget-content{
 	background: $widgetBackground;
+}
+
+html body .ui-dialog{
+	z-index: 99999;
 }
