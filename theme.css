@@ -4353,9 +4353,10 @@ ul.HeaderText li {
 
 #ctl00_pnlSearch {
   width: 230px;
-  position: absolute;
+  position: relative;
+  float: right;
   right: 0px;
-  bottom: 49px;
+  bottom: 0px;
   z-index: 199;
   height: 10px;
   background: #fff;
