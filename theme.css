@@ -4268,7 +4268,6 @@ a, a:visited, a:link {
 	2. LAYOUT
 ------------------------------*/
 html body #main {
-  background-color: white;
   padding: 5px 25px 20px 25px;
   position: relative;
   width: 890px;
@@ -4278,6 +4277,7 @@ html body #main {
   position: relative; }
 
 html body #content {
+  background: white;
   position: relative;
   width: 760px;
   z-index: 1 !important; }

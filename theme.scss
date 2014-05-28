@@ -45,6 +45,7 @@ X. SASS ELEMENTS (HIDDEN IN CSS)
 
 //Main Background and Block Backgrounds
 $background: #ffffff;
+$contentBackground: #ffffff;
 $widgetBackground: #ffffff;
 
 //Header and Emphasis Colours
@@ -118,7 +119,6 @@ body{
 }
 
 html body #main{
-	background-color:	$background;
 	padding:			5px 25px 20px 25px;
 	position:			relative;
 	width:				890px;
@@ -130,6 +130,7 @@ html body #main{
 }
 
 html body #content{
+	background: 		$contentBackground;
 	position:			relative;
 	width:				760px;
 	z-index:			1 !important;
