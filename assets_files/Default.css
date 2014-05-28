@@ -1,0 +1,129 @@
+﻿@import url("//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.css");
+
+/* jQuery theme overrides */
+
+.ui-widget-header
+ { 
+	border: medium none; 
+	background: none repeat scroll 0 0 transparent; 
+	color: inherit; 
+	font-weight: inherit; 
+}
+
+.ui-widget-content a
+{ 
+	color: #0066cc; 
+}
+
+.ui-widget-content a:visited 
+{ 
+	color: #0066cc; 
+}
+
+.ui-state-highlight
+{
+    background: #FDF780;
+    border: #FFC90E 1px solid;
+}
+
+/* other styles */
+
+.ContentWrapper
+{
+	padding: 2px 3px 2px 3px;
+}
+
+.ContentSection
+{
+	margin: 3px 1px 1px 1px;
+	padding: 0px;
+}
+
+.ContentSectionHeader
+{
+	font-weight: bold;
+	font-size: 1.1em;
+	padding: 7px 10px 10px 10px;
+}
+
+.ContentSectionMinorHeader
+{
+	font-weight: bold;
+	font-size: 0.9em;
+	padding: 5px 8px 5px 8px;
+}
+
+.ContentSectionBody
+{
+	background-color: #fff;
+	padding: 10px;
+}
+
+.ContentSectionFooter
+{
+}
+
+.WebStoreAnnouncementDialog .ui-dialog-content{
+  background: #fff !important;
+}
+
+
+.SecondaryColor, .WebStoreAnnouncementDialog
+{
+	background-color:#CCC;
+	color:#000;
+}
+
+.SecondaryColor a
+{
+	color:#000;
+}
+
+.SecondaryColor a:visited
+{
+	color:#000;
+}
+
+.PrimaryColor
+{
+	background-color:#1076dc;
+	color:#FFF;
+}
+
+.PrimaryColor a
+{
+	color:#FFF;
+}
+
+.PrimaryColor a:visited
+{
+	color:#FFF;
+}
+
+.LitePrimaryColor
+{
+	background-color:#ececec;
+	color:#000;
+}
+
+.StandardColor
+{
+	color:#000;
+}
+
+.StandardColor a
+{
+	color: #06c;
+}
+
+.StandardColor a:visited
+{
+	color: #06c;
+}
+
+.NavigationChildMenu
+{
+	padding: 5px;
+	margin-left: 0px;
+	margin-top: 0px;
+}
