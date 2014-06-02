@@ -48,6 +48,10 @@ $background: #777777;
 $contentBackground: #fff;
 $widgetBackground: #ffffff;
 
+//Positions content depending if the site has ads.
+//"auto" for Centered, "0" for Positioning with Ads
+$areThereAds: 0;
+
 //Header and Emphasis Colours
 $mainColour: #444444;
 $secondColour: #BBBBBB;
@@ -122,7 +126,7 @@ html body #main{
 	padding:			5px 25px 30px 25px;
 	position:			relative;
 	width:				760px;
-	margin:				0px;
+	margin:				$areThereAds;
 	background:			$contentBackground;
 }
 
@@ -422,7 +426,6 @@ html body .NavigationChildMenu.PrimaryColor.NavigationMenuPrimaryColor{
 
 td#ctl00_cpContent_tdProductCategories + td .ContentSection{
 	display:	block;
-	width:		715px;
 	background:	transparent;
 	padding:	0px;
 	margin-top:	0px;
@@ -440,7 +443,7 @@ td#ctl00_cpContent_tdProductCategories + td .ContentSection{
 }
 
 #ctl00_cpContent_tdProductCategories .ContentSectionHeader span{
-	font-size:	1	00%;
+	font-size:	100%;
 }
 
 
@@ -510,7 +513,7 @@ html body .ContentSectionBody{
 
 /* PMV Main Area  */
 #ctl00_cpContent_tdProductCategories + td .ContentSectionWrapper{
-	width:			690px;
+	/*width:			690px;*/
 	margin-left:	0px;
 	margin-top:		0px;
 

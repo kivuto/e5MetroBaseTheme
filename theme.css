@@ -4271,7 +4271,7 @@ html body #main {
   padding: 5px 25px 30px 25px;
   position: relative;
   width: 760px;
-  margin: 0px;
+  margin: 0;
   background: white; }
 
 #header {
@@ -4513,7 +4513,6 @@ html body .NavigationChildMenu.PrimaryColor.NavigationMenuPrimaryColor {
 
 td#ctl00_cpContent_tdProductCategories + td .ContentSection {
   display: block;
-  width: 715px;
   background: transparent;
   padding: 0px;
   margin-top: 0px; }
@@ -4529,7 +4528,7 @@ td#ctl00_cpContent_tdProductCategories + td .ContentSection {
   border-radius: 0px; }
 
 #ctl00_cpContent_tdProductCategories .ContentSectionHeader span {
-  font-size: 1	00%; }
+  font-size: 100%; }
 
 #ctl00_cpContent_tdProductCategories .ContentSectionBody .ContentSectionHeader span {
   margin: 0px;
@@ -4589,7 +4588,7 @@ html body .ContentSectionBody {
 
 /* PMV Main Area  */
 #ctl00_cpContent_tdProductCategories + td .ContentSectionWrapper {
-  width: 690px;
+  /*width:			690px;*/
   margin-left: 0px;
   margin-top: 0px; }
 
