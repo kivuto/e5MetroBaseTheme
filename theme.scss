@@ -298,6 +298,9 @@ div.NavigationMenu{
 	border-bottom: 5px solid $mainColour;
 	width:		760px;
 }
+div.NavigationMenu td.NavigationMenuItem{
+	background: $contentBackground;
+}
 
 div.NavigationMenu td.NavigationMenuItem, div.NavigationMenu td.NavigationMenuItemSelected{
 	border: 0px none !important;

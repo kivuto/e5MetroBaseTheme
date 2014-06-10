@@ -4412,6 +4412,9 @@ div.NavigationMenu {
   border-bottom: 5px solid #444444;
   width: 760px; }
 
+div.NavigationMenu td.NavigationMenuItem {
+  background: white; }
+
 div.NavigationMenu td.NavigationMenuItem, div.NavigationMenu td.NavigationMenuItemSelected {
   border: 0px none !important; }
 
