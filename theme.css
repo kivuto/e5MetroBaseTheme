@@ -4456,6 +4456,11 @@ html body .NavigationChildMenu.PrimaryColor.NavigationMenuPrimaryColor {
   left: 0px;
   width: 750px; }
 
+.NavigationChildMenu {
+  padding: 5px;
+  margin-left: 0px;
+  margin-top: 0px; }
+
 /*   Custom Menu Content
 ----------------------------*/
 #header_container p {
