@@ -59,11 +59,15 @@ $secondColour: #BBBBBB;
 //Fonts
 $fontColour: #444444;
 $subFontColour: #888888;
+
 $linkColour: #767676;
+$linkHoverColour: #000;
 $productLinkColour: #767676;
 $navLinkActive: #ffffff;
 $navLinkInactive: #444444;
+
 $headerTextColour: #444444;
+$titleSize: 14pt;
 
 $mainFont: "Helvetica Neue", Arial, sans-serif;
 
@@ -606,6 +610,9 @@ html body table#ctl00_cpContent_fvOfferingDetails_tblOffering h3{
 	padding-right: 10px;
 }
 
+#content h1{
+	font-size: $titleSize;
+}
 
 .ContentSectionWrapper .ContentSection .ContentSectionHeader h1{
 	font-size:		14px;
@@ -929,6 +936,10 @@ html body #mainSpacer{
 
 .ContentText, .FooterText, .HeaderText, .ContentSectionBody{
 	color: $fontColour;
+}
+
+.HeaderText a:hover, .ContentText a:hover, .FooterText a:hover{
+	color: $linkHoverColour;
 }
 
 .ui-widget-header, .ui-widget-content h2, .ui-widget-header .Small{
