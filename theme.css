@@ -1,5 +1,5 @@
-@import url("//ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/themes/smoothness/jquery-ui.css");
 /* IMPORT JQUERY UI THEME */
+@import url("//ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/themes/smoothness/jquery-ui.css");
 /*
 
 	Default Theme SASS
@@ -10,7 +10,7 @@
 	
 	Contains (inorder): Imports + Bootstrap2.1.0 + Theme styles + Responsive styles
 */
-/*
+/*!
  * Bootstrap v2.1.0
  *
  * Copyright 2012 Twitter, Inc
@@ -707,7 +707,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
   display: inline-block;
   height: 20px;
   padding: 4px 6px;
-  margin-bottom: 9px;
+  margin-bottom: 0px;
   font-size: 14px;
   line-height: 20px;
   color: #555;
@@ -3885,35 +3885,30 @@ a.label:hover, a.badge:hover {
 
   to {
     background-position: 0 0; } }
-
 @-moz-keyframes progress-bar-stripes {
   from {
     background-position: 40px 0; }
 
   to {
     background-position: 0 0; } }
-
 @-ms-keyframes progress-bar-stripes {
   from {
     background-position: 40px 0; }
 
   to {
     background-position: 0 0; } }
-
 @-o-keyframes progress-bar-stripes {
   from {
     background-position: 0 0; }
 
   to {
     background-position: 40px 0; } }
-
 @keyframes progress-bar-stripes {
   from {
     background-position: 40px 0; }
 
   to {
     background-position: 0 0; } }
-
 .progress {
   height: 20px;
   margin-bottom: 20px;
@@ -4339,50 +4334,29 @@ ul.HeaderText li {
 /*
 	PRODUCT SEARCH
 ------------------------------*/
-.SearchContainer fieldset {
-  background: #fff;
-  height: 23px; }
-
-.ctl00_pnlSearch {
-  position: absolute;
-  right: 20px;
-  bottom: 3px; }
-
 .SearchContainer {
-  width: 890px;
+  position: absolute;
+  top: 80px;
+  right: 0px;
   border: transparent none 0px !important; }
 
-#ctl00_pnlSearch {
+.SearchTextBox {
+  margin: 0px !important; }
+
+.SearchPanel {
   width: 230px;
-  position: relative;
   float: right;
-  right: 0px;
-  bottom: 0px;
   z-index: 199;
-  height: 10px;
   background: #fff;
-  padding: 10px;
+  padding: 5px;
   border: 2px solid #efefef; }
 
 .SearchImageButton {
   position: relative;
-  top: 4px;
+  top: 2px;
   right: 2px;
   width: 18px;
   height: 18px; }
-
-td.SearchContainer div#ctl00_pnlSearch fieldset {
-  position: relative;
-  border: 1px solid #999;
-  padding: 2px 5px;
-  margin: 10px 0px;
-  background-color: white;
-  bottom: 13px; }
-
-#ctl00_btnSearch {
-  position: relative;
-  right: 0px;
-  top: -3px; }
 
 div#ctl00_pnlSearch input.SearchTextBox {
   width: 200px;
@@ -4662,6 +4636,9 @@ html body table#ctl00_cpContent_fvOfferingDetails_tblOffering h3 {
   line-height: inherit;
   padding-right: 10px; }
 
+#content h1 {
+  font-size: 14pt; }
+
 .ContentSectionWrapper .ContentSection .ContentSectionHeader h1 {
   font-size: 14px;
   margin: 0px;
@@ -4919,6 +4896,9 @@ html body #mainSpacer {
 
 .ContentText, .FooterText, .HeaderText, .ContentSectionBody {
   color: #444444; }
+
+.HeaderText a:hover, .ContentText a:hover, .FooterText a:hover {
+  color: black; }
 
 .ui-widget-header, .ui-widget-content h2, .ui-widget-header .Small {
   color: #444444; }
