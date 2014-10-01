@@ -27,6 +27,8 @@
 /*-----------------------------
 X. SASS ELEMENTS (HIDDEN IN CSS)
 
+X. SASS MIXINS (HIDDEN IN CSS)
+
 0. HACKS AND OVERRIDES
 
 1. TYPO
@@ -47,6 +49,15 @@ X. SASS ELEMENTS (HIDDEN IN CSS)
 $background: #777777;
 $contentBackground: #fff;
 $widgetBackground: #ffffff;
+
+//Main background gradient customization
+$gradientBackground: true; //Set this to "true" or "false" depending on if there is to be a gradient or not
+$gradientBackground-type: linear; //Set the type of gradient (e.g. linear, radial)
+$gradientBackground-angle: 50deg; //Set angle of the gradient (0deg = horizontal, 90deg = vertical)
+$gradientBackground-colour1: #eeeeee; //Set the first colour of the gradient
+$gradientBackground-colour1-percent: 50%; //Set the percent of the background the colour will cover
+$gradientBackground-colour2: #cecece; //Set the second colour of the gradient
+$gradientBackground-colour2-percent: 0%; //Set the percent of the background the colour will cover
 
 //Positions content depending if the site has ads.
 //"auto" for Centered, "0" for Positioning with Ads
@@ -74,6 +85,20 @@ $mainFont: "Helvetica Neue", Arial, sans-serif;
 /***PLEASE CHANGE LOGO THROUGH e5***/
 //Main Header Logo
 //$headerImage: url();
+
+/*------------------------------------*\
+    x. SASS MIXINS
+\*------------------------------------*/
+
+// Mix in for creating a gradient background
+@mixin gradientBackground($type, $angle, $colour1, $colour1Percent, $colour2, $colour2Percent) {
+  	background: -moz-#{$type}-gradient($angle, $colour1 $colour1Percent, $colour2 $colour2Percent); /* FF3.6+ */
+	background: -webkit-#{$type}-gradient($angle, $colour1 $colour1Percent, $colour2 $colour2Percent); /* Chrome10+,Safari5.1+ */
+	background: -o-#{$type}-gradient($angle, $colour1 $colour1Percent, $colour2 $colour2Percent); /* Opera 11.10+ */
+	background: -ms-#{$type}-gradient($angle, $colour1 $colour1Percent, $colour2 $colour2Percent); /* IE10+ */
+	background: #{$type}-gradient($angle, $colour1 $colour1Percent, $colour2 $colour2Percent); /* W3C */
+}
+
 
 /*-----------------------------
 	0. HACKS AND OVERRIDES
@@ -136,6 +161,16 @@ html body #main{
 
 #header{
 	position:		relative;
+}
+
+html body #wrapper {	
+	@if $gradientBackground == tr
+	ue {
+		//add mixin to wrapper
+		@include gradientBackground($gradientBackground-type, $gradientBackground-angle, $gradientBackground-colour1, $gradientBackground-colour1-percent, $gradientBackground-colour2, $gradientBackground-colour2-percent);
+	}@else if $gradientBackground == false {
+		background: $background;
+	}
 }
 
 html body #content{

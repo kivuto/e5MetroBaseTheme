@@ -24,6 +24,8 @@
 /*-----------------------------
 X. SASS ELEMENTS (HIDDEN IN CSS)
 
+X. SASS MIXINS (HIDDEN IN CSS)
+
 0. HACKS AND OVERRIDES
 
 1. TYPO
@@ -37,6 +39,9 @@ X. SASS ELEMENTS (HIDDEN IN CSS)
     x. SASS ELEMENTS
 \*------------------------------------*/
 /***PLEASE CHANGE LOGO THROUGH e5***/
+/*------------------------------------*\
+    x. SASS MIXINS
+\*------------------------------------*/
 /*-----------------------------
 	0. HACKS AND OVERRIDES
 ------------------------------*/
@@ -77,13 +82,25 @@ html body #main {
   position: relative;
   width: 760px;
   margin: 0;
-  background: white; }
+  background: #fff; }
 
 #header {
   position: relative; }
 
+html body #wrapper {
+  background: -moz-linear-gradient(50deg, #eeeeee 50%, #cecece 0%);
+  /* FF3.6+ */
+  background: -webkit-linear-gradient(50deg, #eeeeee 50%, #cecece 0%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(50deg, #eeeeee 50%, #cecece 0%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(50deg, #eeeeee 50%, #cecece 0%);
+  /* IE10+ */
+  background: linear-gradient(50deg, #eeeeee 50%, #cecece 0%);
+  /* W3C */ }
+
 html body #content {
-  background: white;
+  background: #fff;
   position: relative;
   width: 760px;
   z-index: 1 !important; }
@@ -99,7 +116,7 @@ html body .ContentSection {
   width: 100%;
   position: relative;
   padding: 0px !important;
-  border: 1px solid #bbbbbb;
+  border: 1px solid #BBBBBB;
   margin-left: -1px; }
 
 html body .ContentSectionHeader {
@@ -197,14 +214,14 @@ div.NavigationMenu {
   width: 760px; }
 
 div.NavigationMenu td.NavigationMenuItem {
-  background: white; }
+  background: #fff; }
 
 div.NavigationMenu td.NavigationMenuItem, div.NavigationMenu td.NavigationMenuItemSelected {
   border: 0px none !important; }
 
 div.NavigationMenu table.NavigationMenu td.NavigationMenuItemSelected.NavigationMenuPrimaryColor a {
   background: #444444;
-  color: white; }
+  color: #ffffff; }
 
 div.NavigationMenu a, div.NavigationMenu a:link, div.NavigationMenu a:visited {
   padding: 5px; }
@@ -213,7 +230,7 @@ div.NavigationMenu table.NavigationMenu td.NavigationMenuPrimaryColor a, div.Nav
   font-size: 12px;
   padding: 10px 10px;
   color: #444444;
-  background: #bbbbbb;
+  background: #BBBBBB;
   margin-right: 2px;
   text-decoration: none;
   position: relative;
@@ -221,20 +238,20 @@ div.NavigationMenu table.NavigationMenu td.NavigationMenuPrimaryColor a, div.Nav
 
 div.NavigationMenu table.NavigationMenu td.NavigationMenuPrimaryColor a:hover, div.NavigationMenu table.NavigationMenu td.NavigationMenuSecondaryColor a:hover {
   background: #444444;
-  color: white; }
+  color: #ffffff; }
 
 .NavigationChildMenuSpacer {
   position: relative;
   bottom: 120px; }
 
 .NavigationChildMenu a:visited, .NavigationChildMenu a, .NavigationChildMenu a:link {
-  color: white; }
+  color: #ffffff; }
 
 /*   Child Menu
 ----------------------------*/
 html body .NavigationChildMenu.PrimaryColor.NavigationMenuPrimaryColor {
   background-color: #444444;
-  color: white;
+  color: #ffffff;
   /* Fix small pixel issue with sub menu aligning up with main menu */
   position: relative;
   left: 0px;
@@ -315,7 +332,7 @@ td#ctl00_cpContent_tdProductCategories + td .ContentSection {
   padding: 8px 0px 6px 20px;
   font-size: 14px;
   border: 0px none;
-  border-bottom: 1px solid #bbbbbb;
+  border-bottom: 1px solid #BBBBBB;
   background: #eee;
   border-radius: 0px; }
 
@@ -406,8 +423,9 @@ html body .ContentSectionBody {
 /*
   OLD OTH STYLES
 -----------------------------*/
-html > body #wrapper {
-  background: #777777; }
+html > body {
+  height: auto;
+  background-color: #777777; }
 
 #mainSpacer {
   position: relative;
@@ -466,7 +484,7 @@ html body table#ctl00_cpContent_fvOfferingDetails_tblOffering h3 {
   line-height: 21px; }
 
 html body .ui-widget-header {
-  background: #bbbbbb;
+  background: #BBBBBB;
   border: 0px none; }
 
 /* BUTTONS */
@@ -588,11 +606,11 @@ html body .ContentSectionBody .ui-tabs-nav li a, html body .ContentSectionBody .
   vertical-align: middle;
   cursor: pointer;
   background-color: whiteSmoke;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6));
-  background-image: -webkit-linear-gradient(top, white, #e6e6e6);
-  background-image: -o-linear-gradient(top, white, #e6e6e6);
-  background-image: linear-gradient(to bottom, white, #e6e6e6);
-  background-image: -moz-linear-gradient(top, white, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#E6E6E6));
+  background-image: -webkit-linear-gradient(top, white, #E6E6E6);
+  background-image: -o-linear-gradient(top, white, #E6E6E6);
+  background-image: linear-gradient(to bottom, white, #E6E6E6);
+  background-image: -moz-linear-gradient(top, white, #E6E6E6);
   background-repeat: repeat-x;
   border: 1px solid #BBB;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
@@ -707,16 +725,15 @@ html body #mainSpacer {
   color: #444444; }
 
 .HeaderText a:hover, .ContentText a:hover, .FooterText a:hover {
-  color: black; }
+  color: #000; }
 
 .ui-widget-header, .ui-widget-content h2, .ui-widget-header .Small {
   color: #444444; }
 
 .ui-widget-content {
-  background: white; }
+  background: #ffffff; }
 
 html body .ui-dialog {
   z-index: 99999; }
 
-#ctl00_divWebStoreMaster {
-  height: 100%; }
+/*# sourceMappingURL=theme.css.map */
