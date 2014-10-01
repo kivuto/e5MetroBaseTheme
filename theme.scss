@@ -51,13 +51,13 @@ $contentBackground: #fff;
 $widgetBackground: #ffffff;
 
 //Main background gradient customization
-$gradientBackground: true; //Set this to "true" or "false" depending on if there is to be a gradient or not
-$gradientBackground-type: linear; //Set the type of gradient (e.g. linear, radial)
-$gradientBackground-angle: 50deg; //Set angle of the gradient (0deg = horizontal, 90deg = vertical)
+$gradientBackground: no; //Set this to "no" or "yes" 
+$gradientBackground-type: linear; //Set the type of gradient (e.g. linear, radial, etc)
+$gradientBackground-angle: 50deg; //Set angle of the gradient (e.g 90deg, 45deg, etc)
 $gradientBackground-colour1: #eeeeee; //Set the first colour of the gradient
-$gradientBackground-colour1-percent: 50%; //Set the percent of the background the colour will cover
+$gradientBackground-colour1-location: 50%; //Set the location of colour 1
 $gradientBackground-colour2: #cecece; //Set the second colour of the gradient
-$gradientBackground-colour2-percent: 0%; //Set the percent of the background the colour will cover
+$gradientBackground-colour2-location: 0%; //Set the location of colour 2
 
 //Positions content depending if the site has ads.
 //"auto" for Centered, "0" for Positioning with Ads
