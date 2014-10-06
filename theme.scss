@@ -270,7 +270,7 @@ ul.HeaderText li{
 	position: absolute;
 	@if $searchPosition == below {
 		top: 140px;
-	}else if $searchPosition == default {
+	}@else if $searchPosition == default {
 		top: 60px;
 	}
 	right: 0px;
