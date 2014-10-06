@@ -151,7 +151,12 @@ a, a:visited, a:link{
 	2. LAYOUT
 ------------------------------*/
 body{
-
+	@if $gradientBackground == yes {
+		//add mixin to wrapper
+		@include gradientBackground($gradientBackground-type, $gradientBackground-angle, $gradientBackground-colour1, $gradientBackground-colour1-location, $gradientBackground-colour2, $gradientBackground-colour2-location);
+	}@else if $gradientBackground == no {
+		background: $background;
+	}
 }
 
 html body #main{
@@ -167,12 +172,7 @@ html body #main{
 }
 
 html body #wrapper {	
-	@if $gradientBackground == yes {
-		//add mixin to wrapper
-		@include gradientBackground($gradientBackground-type, $gradientBackground-angle, $gradientBackground-colour1, $gradientBackground-colour1-location, $gradientBackground-colour2, $gradientBackground-colour2-location);
-	}@else if $gradientBackground == no {
-		background: $background;
-	}
+	
 }
 
 html body #content{
