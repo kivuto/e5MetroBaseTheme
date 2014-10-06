@@ -59,6 +59,9 @@ $gradientBackground-colour1-location: 60%; //Set the location of colour 1
 $gradientBackground-colour2: #cecece; //Set the second colour of the gradient
 $gradientBackground-colour2-location: 0%; //Set the location of colour 2
 
+//Search Field Customization
+$searchPosition: default; //Set to "default" or "below" (below the banner)
+
 //Positions content depending if the site has ads.
 //"auto" for Centered, "0" for Positioning with Ads
 $areThereAds: 0;
@@ -209,6 +212,16 @@ html body .ContentSectionHeader{
 	left: 30px;
 }
 
+.WelcomeMessage{
+	
+	@if $searchPosition == below {
+	padding: 40px 0 0 0;
+	}else if $searchPosition == default {
+	//default padding
+	}
+
+}
+
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*-----------------------------
@@ -255,7 +268,11 @@ ul.HeaderText li{
 .SearchContainer{
 
 	position: absolute;
-	top: 60px;
+	@if $searchPosition == below {
+		top: 140px;
+	}else if $searchPosition == default {
+		top: 60px;
+	}
 	right: 0px;
 	border: transparent none 0px !important;
 }
